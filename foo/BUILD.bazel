@@ -1,0 +1,8 @@
+py_binary(
+    name = "foo",
+    srcs = ["foo.py"],
+    data = [
+        "local-data.txt",
+        "@data//:data"
+    ]
+)
